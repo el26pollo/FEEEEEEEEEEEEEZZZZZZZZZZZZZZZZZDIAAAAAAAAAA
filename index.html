@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Pastel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="tarjeta">
+        <h1 id="mensaje">🎉 ¡Feliz Cumpleaños! 🎉</h1>
+
+        <div class="datos">
+            <input id="nombre" placeholder="Nombre">
+            <input id="edad" type="number" placeholder="Edad">
+        </div>
+
+        <div class="pastel" id="pastel">
+            <div class="velas" id="velas"></div>
+
+            <div class="betun"></div>
+            <div class="capa capa1"></div>
+            <div class="capa capa2"></div>
+            <div class="capa capa3"></div>
+
+            <div class="plato"></div>
+        </div>
+
+        <button onclick="celebrar()">🎂 Celebrar</button>
+    </div>
+
+    <canvas id="fuegos"></canvas>
+
+    <audio id="sonido">
+        <source src="https://www.soundjay.com/human/sounds/applause-8.mp3">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

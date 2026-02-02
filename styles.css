@@ -1,0 +1,133 @@
+ * {
+     box-sizing: border-box;
+ }
+
+ body {
+     margin: 0;
+     background: radial-gradient(circle, #b32960, #cef098);
+     font-family: 'Comic Sans MS', cursive;
+     text-align: center;
+ }
+
+ .tarjeta {
+     max-width: 400px;
+     margin: auto;
+     padding: 20px;
+     background: rgb(175, 236, 157);
+     border-radius: 25px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+ }
+
+ h1 {
+     color: #ff1493;
+ }
+
+ input {
+     padding: 8px;
+     margin: 5px;
+     border-radius: 10px;
+     border: 1px solid #ff69b4;
+     width: 45%;
+ }
+
+ /* Pastel */
+ .pastel {
+     position: relative;
+     width: 220px;
+     margin: 30px auto;
+     animation: flotar 3s infinite alternate;
+ }
+
+ @keyframes flotar {
+     to {
+         transform: translateY(-10px);
+     }
+ }
+
+ /* Velas */
+ .velas {
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+ }
+
+ .vela {
+     width: 10px;
+     height: 35px;
+     background: rgb(250, 252, 251);
+     position: relative;
+ }
+
+ .flama {
+     width: 15px;
+     height: 15px;
+     background: orange;
+     border-radius: 50%;
+     position: absolute;
+     top: -15px;
+     left: -3px;
+     animation: flama 0.3s infinite alternate;
+ }
+
+ @keyframes flama {
+     to {
+         transform: scale(1.4);
+     }
+ }
+
+ /* Pastel */
+ .betun {
+     height: 18px;
+     background: rgb(233, 141, 228);
+     border-radius: 0 0 20px 20px;
+ }
+
+ .capa {
+     height: 55px;
+     border-radius: 10px;
+ }
+
+ .capa1 {
+     background: #ffb6c1;
+ }
+
+ .capa2 {
+     background: #ff69b4;
+ }
+
+ .capa3 {
+     background: #ff1493;
+ }
+
+ .plato {
+     width: 260px;
+     height: 18px;
+     background: #f5acb8;
+     border-radius: 50%;
+     margin: auto;
+ }
+
+ /* Botón */
+ button {
+     padding: 12px 30px;
+     background: #69c3ff;
+     border: none;
+     color: white;
+     border-radius: 20px;
+     cursor: pointer;
+     font-size: 16px;
+ }
+
+ /* Fuegos */
+ canvas {
+     position: fixed;
+     top: -100px;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     pointer-events: none;
+     z-index: -1;
+
+
+
+ }
